@@ -359,3 +359,43 @@ function occur(str) {
 }
 
 // console.log(occur("dasdfafsasfwqasdasdqw"));
+
+// ADD OF ARRAY
+var arr10 = ["heeewqewe", 456, "sdfsdfs", 542, "fsdf"];
+var sum = 0;
+
+arr10.forEach((elem) => {
+  if (typeof elem === "number") {
+    sum = sum + elem;
+  }
+});
+
+// console.log(sum); 
+
+// MOST REPEAT NUMBER IN ARRAY
+
+let arr = [2, 5, 3, 5, 2, 5, 7, 2, 2, 5];
+
+let counts = {};
+let mostValue = arr[0];
+let max = 0;
+
+for (let num of arr) {
+  counts[num] = (counts[num] || 0) + 1;
+
+  if (counts[num] > max) {
+    max = counts[num];
+    mostValue = num;
+  }
+}
+
+// console.log("Most repeated value:", mostValue, "Count:", max);
+
+//GET UNIQUE VALUE AND CONCAT
+function union(arr1,arr2){
+  return [...new Set(arr1.concat(arr2))]
+
+}
+
+// console.log(union([1,2,3,4,5],[1,7,8,9,6]))
+
