@@ -399,3 +399,16 @@ function union(arr1,arr2){
 
 // console.log(union([1,2,3,4,5],[1,7,8,9,6]))
 
+// find maximum number 
+
+function maxi(num){
+  var max=0;
+  for(var i=0; i<num.length; i++){
+    if(num[i]>num[max]){
+      max=i;
+    }
+  }
+  return num[max]
+}
+
+console.log(maxi([1,2,3,4,5,6,8,10]))
