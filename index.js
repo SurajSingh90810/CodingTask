@@ -411,4 +411,72 @@ function maxi(num){
   return num[max]
 }
 
-console.log(maxi([1,2,3,4,5,6,8,10]))
+// console.log(maxi([1,2,3,4,5,6,8,10]))
+
+// OBJECT
+let obj={
+  name:"hello",
+  age:54,
+  city:"surat"
+}
+console.log(Object.keys(obj).length)
+console.log(Object.values(obj))
+console.log(Object.entries(obj))
+
+let entries = Object.entries(obj);
+let flatArray = entries.flat();
+console.log(flatArray)
+
+
+let arrObj=[
+  {
+    name:"suraj",
+    age:50
+  },
+  {
+    name:"fsdfsdf",
+    age:45
+  },
+  {
+    name:"sdf",
+    age:22
+  },
+]
+
+let resultArr=arrObj.filter((obj)=>{
+  return obj.age===22
+})
+
+// console.log(resultArr)
+
+
+
+//Array to String
+
+
+let arr11 = [1, 2, 3, 4, 5,"fggffg","gff"];
+
+// console.log(arr11.toString()); 
+// console.log(arr11.join());   
+// console.log(arr11.join(" "));  
+// console.log(arr11.join("-"));  
+// console.log(String(arr));    
+
+
+//String To Array
+
+let str6 = "hello world";
+
+// let arr12 = str6.split(" ");  
+// console.log(arr12); 
+
+// let arr13 = str6.split("");   
+// console.log(arr13);
+
+// let arr14 = Array.from(str6);
+// console.log(arr14); 
+
+// let arr15 = [...str6];
+// console.log(arr15); 
+
+
